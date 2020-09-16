@@ -1,0 +1,34 @@
+{
+	"name": "Simple Bipods",
+	"description": "A mod that aims to simplify bipods, allow for greater freedom when deploying them, and make them functionally consistent.",
+	"author": "Krimzin",
+	"contact": "https://www.modworkshop.net/mod/28961",
+	"version": "1.0.0",
+	"blt_version": 2,
+	"updates": [
+		{
+			"identifier": "Simple-Bipods",
+			"host": {
+				"meta": "https://github.com/Krimzin/Simple-Bipods/releases/download/refs%2Fheads%2Fmaster/meta.json"
+			}
+		}
+	],
+	"hooks": [
+		{
+			"script_path": "hooks/SimpleBipods.lua",
+			"hook_id": "lib/setups/Setup"
+		},
+		{
+			"script_path": "hooks/SimpleBipodsLocalization.lua",
+			"hook_id": "lib/managers/LocalizationManager"
+		},
+		{
+			"script_path": "hooks/SimpleBipodsMenu.lua",
+			"hook_id": "lib/managers/MenuManager"
+		},
+		{
+			"script_path": "hooks/WeaponLionGadget1.lua",
+			"hook_id": "lib/units/weapons/WeaponLionGadget1"
+		}
+	]
+}

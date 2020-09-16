@@ -1,0 +1,26 @@
+{
+	"menu_id": "simple_bipods",
+	"parent_menu_id": "blt_options",
+	"title": "simple_bipods_title",
+	"back_callback": "simple_bipods_back",
+	"items": [
+		{
+			"type": "slider",
+			"id": "simple_bipods_forward_ray_length",
+			"title": "simple_bipods_forward_ray_length_title",
+			"description": "simple_bipods_forward_ray_length_desc",
+			"callback": "simple_bipods_forward_ray_length",
+			"value": "forward_ray_length",
+			"max": 100,
+			"min": 0,
+			"step": 1
+		},
+		{
+			"type": "toggle",
+			"id": "simple_bipods_draw_rays",
+			"title": "simple_bipods_draw_rays_title",
+			"callback": "simple_bipods_draw_rays",
+			"value": "draw_rays"
+		}
+	]
+}
