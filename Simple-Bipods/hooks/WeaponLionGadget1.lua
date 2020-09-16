@@ -11,7 +11,7 @@ function WeaponLionGadget1:_shoot_bipod_rays()
 	return point_1, point_2, point_3, obstacle, surface, success
 end
 
-function WeaponLionGadget1:_is_deployable(draw_rays)
+function WeaponLionGadget1:_is_deployable()
 	if self._is_npc or self:_is_in_blocked_deployable_state() then
 		return false
 	end
