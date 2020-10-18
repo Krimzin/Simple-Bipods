@@ -4,6 +4,14 @@
 	"author": "Krimzin",
 	"contact": "https://www.modworkshop.net/mod/28961",
 	"version": "1.0.1",
+	"updates": [
+		{
+			"identifier": "Simple-Bipods",
+			"host": {
+				"meta": "https://github.com/Krimzin/Simple-Bipods/releases/download/refs%2Fheads%2Fsecond/meta.json"
+			}
+		}
+	],
 	"hooks": [
 		{
 			"script_path": "hooks/Core.lua",
