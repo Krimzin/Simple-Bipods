@@ -1,9 +1,9 @@
 name: Release
 on:
   push:
-    branches: [ master ]
+    branches: [ second ]
   pull_request:
-    branches: [ master ]
+    branches: [ second ]
 jobs:
   build:
     runs-on: windows-latest
