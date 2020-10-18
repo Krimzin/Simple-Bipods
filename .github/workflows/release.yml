@@ -10,11 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Delete latest release
-        uses: ame-yu/action-delete-latest-release@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Create archive
         run: ./.github/7za.exe -tzip a "./Simple-Bipods.zip" "./Simple-Bipods"
 
