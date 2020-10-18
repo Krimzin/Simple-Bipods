@@ -17,19 +17,20 @@ function WeaponLionGadget1:_is_deployable()
 	end
 
 	local point_1, point_2, point_3, obstacle, surface, success = self:_shoot_bipod_rays()
-	if success then
-		self._from = point_2
-		self._to = point_3
-		return true
+	if not success then
+		return false
 	end
-	return false
+
+	self._from = point_2
+	self._to = point_3
+	return true
 end
 
 function WeaponLionGadget1:is_usable()
 	return self._unit:raycast(self._from, self._to) and true or false
 end
 
-Hooks:PostHook(WeaponLionGadget1, "update", "SimpleBipodsDrawRays", function (self)
+Hooks:PostHook(WeaponLionGadget1, "update", "SimpleBipods_draw_rays", function (self)
 	if managers.player:player_unit() and SimpleBipods:option("draw_rays") then
 		local point_1, point_2, point_3, obstacle, surface, success = self:_shoot_bipod_rays()
 		if obstacle then
@@ -50,6 +51,6 @@ Hooks:PostHook(WeaponLionGadget1, "update", "SimpleBipodsDrawRays", function (se
 	end
 end)
 
-Hooks:PostHook(WeaponLionGadget1, "check_state", "SimpleBipodsEnableUpdate", function (self)
+Hooks:PostHook(WeaponLionGadget1, "check_state", "SimpleBipods_enable_update", function (self)
 	self._unit:set_extension_update_enabled(Idstring("base"), true)
 end)
