@@ -1,4 +1,4 @@
-Hooks:Add("LocalizationManagerPostInit", "SimpleBipodsLocalization", function (self)
+Hooks:Add("LocalizationManagerPostInit", "SimpleBipods_localization", function (self)
 	local lang_key = SystemInfo:language():key()
 	local lang_file_name = "english.txt"
 	for _, file_name in pairs(file.GetFiles(SimpleBipods.localization_path)) do
