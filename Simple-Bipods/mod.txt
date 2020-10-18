@@ -8,7 +8,7 @@
 		{
 			"identifier": "Simple-Bipods",
 			"host": {
-				"meta": "https://github.com/Krimzin/Simple-Bipods/releases/download/refs%2Fheads%2Fsecond/meta.json"
+				"meta": "https://github.com/Krimzin/Simple-Bipods/releases/download/second/meta.json"
 			}
 		}
 	],
