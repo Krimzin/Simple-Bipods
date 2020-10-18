@@ -9,7 +9,7 @@
 		{
 			"identifier": "Simple-Bipods",
 			"host": {
-				"meta": "https://github.com/Krimzin/Simple-Bipods/releases/download/refs%2Fheads%2Fmaster/meta.json"
+				"meta": "https://github.com/Krimzin/Simple-Bipods/releases/download/latest/meta.json"
 			}
 		}
 	],
