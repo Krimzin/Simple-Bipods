@@ -1,6 +1,6 @@
 {
-	"simple_bipods_title": "Simple Bipods",
-	"simple_bipods_forward_ray_length_title": "Forward Ray Length",
-	"simple_bipods_forward_ray_length_desc": "How far from the camera should bipods check for objects.",
-	"simple_bipods_draw_rays_title": "Draw Rays"
+	"SimpleBipods_title": "Simple Bipods",
+	"SimpleBipods_forward_ray_length_title": "Forward Ray Length",
+	"SimpleBipods_forward_ray_length_desc": "How far from the camera should bipods check for objects.",
+	"SimpleBipods_draw_rays_title": "Draw Rays"
 }
