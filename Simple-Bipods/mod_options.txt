@@ -6,7 +6,7 @@
 	"items": [
 		{
 			"type": "slider",
-			"id": "SimpleBipods_forward_ray_length",
+			"id": "forward_ray_length",
 			"title": "SimpleBipods_forward_ray_length_title",
 			"description": "SimpleBipods_forward_ray_length_desc",
 			"callback": "SimpleBipods_forward_ray_length",
@@ -17,7 +17,7 @@
 		},
 		{
 			"type": "toggle",
-			"id": "SimpleBipods_draw_rays",
+			"id": "draw_rays",
 			"title": "SimpleBipods_draw_rays_title",
 			"callback": "SimpleBipods_draw_rays",
 			"value": "draw_rays"
