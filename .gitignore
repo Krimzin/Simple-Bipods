@@ -1,1 +1,2 @@
-release
+/release/
+!/release/input/meta.json
