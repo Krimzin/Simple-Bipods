@@ -1,4 +1,4 @@
-Hooks:PostHook(PlayerTweakData, "init", "SimpleBipods_init_stances", function (self)
+Hooks:PostHook(PlayerTweakData, "_init_new_stances", "SimpleBipods_init_stances", function (self)
 	local stances = self.stances
 	stances.hk21.bipod.shoulders.translation = Vector3(-8.55, 20, -1.8)
 	stances.m249.bipod.shoulders.translation = Vector3(-10.725, 20, -4)
