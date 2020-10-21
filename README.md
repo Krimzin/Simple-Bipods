@@ -1,5 +1,7 @@
-# Simple Bipods
+# Simple Bipods - Second Edition
 A mod for PAYDAY 2 that aims to simplify bipods, allow for greater freedom when deploying them, and make them functionally consistent.
+
+This edition includes changes that may not be compatible with LMG Steelsights mod and custom bipod-equipped weapons that lack built-in support.
 
 ### Features
 - Camera pitch is no longer a condition for deployment.
