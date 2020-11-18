@@ -3,7 +3,7 @@
 	"description": "A mod that aims to simplify bipods, allow for greater freedom when deploying them, and make them functionally consistent.",
 	"author": "Krimzin",
 	"contact": "https://www.modworkshop.net/mod/28961",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"updates": [
 		{
 			"identifier": "Simple-Bipods",
