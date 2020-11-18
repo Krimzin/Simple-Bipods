@@ -5,9 +5,16 @@ function WeaponLionGadget1:_shoot_bipod_rays()
 	mvector3.add_scaled(point_2, camera:forward(), SimpleBipods:option("forward_ray_length"))
 	local point_3 = mvector3.copy(point_2)
 	mvector3.add_scaled(point_3, -camera:rotation():z(), 100)
-	local obstacle = self._unit:raycast(point_1, point_2)
-	local surface = self._unit:raycast(point_2, point_3)
-	local success = not obstacle and surface and surface.ray:angle(surface.normal) > 135
+	local mask = managers.slot:get_mask("world_geometry")
+	local obstacle = self._unit:raycast("ray", point_1, point_2, "slot_mask", mask)
+	local surface, success
+	if obstacle then
+		surface = nil
+		success = false
+	else
+		surface = self._unit:raycast("ray", point_2, point_3, "slot_mask", mask)
+		success = surface and surface.ray:angle(surface.normal) > 135
+	end
 	return point_1, point_2, point_3, obstacle, surface, success
 end
 
