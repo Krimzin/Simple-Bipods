@@ -2,7 +2,7 @@ Hooks:Add("LocalizationManagerPostInit", "SimpleBipods_localization", function (
 	local path = SimpleBipods.localization_path
 	local key = SystemInfo:language():key()
 	local file_name = "english.txt"
-	for _, name in pairs(file.GetFiles(path)) do
+	for _, name in ipairs(file.GetFiles(path)) do
 		if Idstring(name:match("^(.*).txt$")):key() == key then
 			file_name = name
 			break
