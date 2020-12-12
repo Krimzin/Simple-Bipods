@@ -24,21 +24,29 @@ function WeaponLionGadget1:_is_deployable()
 	end
 
 	local point_1, point_2, point_3, obstacle, surface, success = self:_shoot_bipod_rays()
-	if not success then
+	if success then
+		self._from = point_2
+		self._to = point_3
+		return true
+	else
 		return false
 	end
-
-	self._from = point_2
-	self._to = point_3
-	return true
 end
 
 function WeaponLionGadget1:is_usable()
 	return self._unit:raycast(self._from, self._to) and true or false
 end
 
+function WeaponLionGadget1:set_is_local_player(state)
+	self._is_local_player = state
+end
+
 Hooks:PostHook(WeaponLionGadget1, "update", "SimpleBipods_draw_rays", function (self)
-	if managers.player:player_unit() and SimpleBipods:option("draw_rays") then
+	if not self._is_local_player then
+		return
+	end
+
+	if SimpleBipods:option("draw_rays") then
 		local point_1, point_2, point_3, obstacle, surface, success = self:_shoot_bipod_rays()
 		if obstacle then
 			Application:draw_line(point_1, point_2, 1, 0, 0)
